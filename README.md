@@ -1,1 +1,1 @@
-Hello world, ini adalah repository pertama saya.
+Hello world, ini adalah repository pertama saya
