@@ -11,12 +11,12 @@ public class ifCetakKRS07 {
             System.out.println("Pembayaran UKT terverifikasi.");
             System.out.println("Silakan cetak KRS dan minta tanda tangan DPA");
         } else {
-            System.out.println("Pembayaran UKT belum terverifikasi.");
-            System.out.println("Silakan segera lunasi UKT untuk dapat mencetak KRS");
+            System.out.println("Pembayaran UKT ditolak.");
+            System.out.println("Silakan lunasi UKT terlebih dahulu.");
         }
 
         // Ternary operator
-        String pesan = uktLunas ? "Pembayaran UKT terverifikasi. Silakan cetak KRS dan minta tanda tangan DPA" : "Pembayaran UKT belum terverifikasi. Silakan segera lunasi UKT untuk dapat mencetak KRS";
+        String pesan = uktLunas ? "Pembayaran UKT terverifikasi. Silakan cetak KRS dan minta tanda tangan DPA" : "Pembayaran UKT belum terverifikasi. Silakan lunasi UKT terlebih dahulu.";
         System.out.println(pesan);
         
     }
