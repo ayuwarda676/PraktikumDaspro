@@ -2,7 +2,7 @@
 Ini adalah markdown yang berisi jawaban dari soal latihan daspro pertemuan minggu ke 6
 
 ## Flowchart dan Pseudocode nomor 1
-![Flowchart](https://file%2B.vscode-resource.vscode-cdn.net/Users/user/Downloads/Flowchart%20Nomor1.drawio.png?version%3D1760109002617)
+![Flowchart 1](https://file%2B.vscode-resource.vscode-cdn.net/Users/user/Downloads/FlowchartNo1.drawio.png?version%3D1760351675908)
 
 Pseudocode
 Program 
@@ -25,7 +25,7 @@ ELSE
 END IF
 
 ## Flowchart dan Pseudocode nomor 2
-![Flowchart 2](https://file%2B.vscode-resource.vscode-cdn.net/Users/user/Downloads/Flowchart%202.drawio.png?version%3D1760110943441)
+![Flowchart 2](https://file%2B.vscode-resource.vscode-cdn.net/Users/user/Downloads/FlowchartNo2.drawio.png?version%3D1760351792424)
 
 Pseudocode
 Program
