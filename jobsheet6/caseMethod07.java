@@ -80,29 +80,34 @@ public class caseMethod07 {
             System.out.println("Nilai Huruf Tidak Valid");
         }
 
-    
-        boolean STATUS;
-        String statusKelulusan;
-        if (nilaiAkhir1 >= 60 && nilaiAkhir2 >= 60) {
-            STATUS = true;
-            statusKelulusan = "LULUS";
+
+        
+        String statusKelulusan1;
+        if (nilaiAkhir1 >= 60) {
+            statusKelulusan1 = "LULUS";
         } else {
-            STATUS = false;
-            statusKelulusan = "TIDAK LULUS";
+            statusKelulusan1 = "TIDAK LULUS";
+        }
+
+        String statusKelulusan2;
+        if (nilaiAkhir2 >= 60) {
+            statusKelulusan2 = "LULUS";
+        } else {
+            statusKelulusan2 = "TIDAK LULUS";
         }
 
 
-        int nilaiKehadiran = 0;
-        int nilaiEtika = 0;
-        String statusSemester;
-        if (STATUS) {
+        int nilaiKehadiran = (nilaiKehadiran1 + nilaiKehadiran2) / 2;
+        int nilaiEtika = (nilaiEtika1 + nilaiEtika2) / 2;
+        String statusKelulusan = "";
+        if (statusKelulusan1.equals("LULUS") && statusKelulusan2.equals("LULUS")) {
             if (rataRataNilaiAkhir >= 60 && nilaiKehadiran >= 75 && nilaiEtika >= 70) {
-                statusSemester = "LULUS";
+                statusKelulusan = "LULUS";
             } else {
-                statusSemester = "TIDAK LULUS";
+                statusKelulusan = "TIDAK LULUS";
             }
         } else {
-            statusSemester = "TIDAK LULUS";
+            statusKelulusan = "TIDAK LULUS";
         }
 
 
@@ -134,11 +139,11 @@ public class caseMethod07 {
         System.out.println();
         System.out.println("Mata Kuliah                 UTS   UAS       Tugas     Nilai Akhir     Nilai Huruf     Status");
         System.out.println("---------------------------------------------------------------------------------------------");
-        System.out.println(mataKuliah1 + "   " + nilaiUTS1 + "    " + nilaiUAS1 + "        " + nilaiTugas1 + "          " + nilaiAkhir1 + "              " + nilaiHuruf1 + "            " + statusKelulusan);
-        System.out.println(mataKuliah2 + "               " + nilaiUTS2 + "    " + nilaiUAS2 + "        " + nilaiTugas2 + "          " + nilaiAkhir2 + "              " + nilaiHuruf2 + "            " + statusKelulusan);
+        System.out.println(mataKuliah1 + "   " + nilaiUTS1 + "    " + nilaiUAS1 + "        " + nilaiTugas1 + "          " + nilaiAkhir1 + "              " + nilaiHuruf1 + "            " + statusKelulusan1);
+        System.out.println(mataKuliah2 + "               " + nilaiUTS2 + "    " + nilaiUAS2 + "        " + nilaiTugas2 + "          " + nilaiAkhir2 + "              " + nilaiHuruf2 + "            " + statusKelulusan2);
         System.out.println();
         System.out.println("Rata-rata Nilai Akhir " + rataRataNilaiAkhir);
-        System.out.println("Status Kelulusan Semester : " + statusSemester);
+        System.out.println("Status Kelulusan Semester : " + statusKelulusan);
         
 
 }
