@@ -13,6 +13,11 @@ public class siakadFor07 {
             if (nilai < terendah) {
                 terendah = nilai;
             }
+            if (nilai >= 60) {
+                System.out.println("Mahasiswa ke-" + i + " lulus.");
+            } else {
+                System.out.println("Mahasiswa ke-" + i + " tidak lulus.");
+            }
         } 
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
