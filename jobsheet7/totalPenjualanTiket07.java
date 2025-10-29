@@ -11,6 +11,7 @@ public class totalPenjualanTiket07 {
         System.out.print("Masukkan jumlah transaksi: ");
         jumlahTransaksi = sc.nextInt();
         for (int i = 1; i <= jumlahTransaksi; i++) {
+            System.out.println();
             System.out.println("Transaksi Ke-" +i);
             System.err.print("Masukkan jumlah tiket yang dibeli: ");
             int jumlahTiket = sc.nextInt();
@@ -33,6 +34,7 @@ public class totalPenjualanTiket07 {
             double totalBayar = totalHarga - diskon;
             System.out.println("Diskon: Rp" +diskon);
             System.out.println("Total Bayar" +totalBayar);
+            System.out.println("--------------------");
 
             totalTiket += jumlahTiket;
             totalPenjualan += totalBayar;
