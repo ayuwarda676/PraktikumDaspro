@@ -41,6 +41,7 @@ public class tarifParkir07 {
             System.out.println("Biaya parkir untuk kendaraan ke-" + i + ": Rp" + biayaParkir);
             totalBiaya += biayaParkir;
         }
+        
         System.out.println();
         System.out.println("==========TOTAL BIAYA PARKIR==========");
         System.out.println("Total Biaya Parkir: Rp" + totalBiaya);
