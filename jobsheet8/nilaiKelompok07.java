@@ -9,10 +9,9 @@ public class nilaiKelompok07 {
         int i, j, nilai;
         float rataRata, totalNilai;
 
-
         totalNilai = 0;
         for ( j = 1; j <= 5; j++) {
-            System.out.print(" Nilai dari Kelompok Penilai " + j + " : ");
+            System.out.print("Nilai dari Kelompok Penilai " + j + " : ");
             nilai = sc.nextInt();
             totalNilai += nilai;
         }
