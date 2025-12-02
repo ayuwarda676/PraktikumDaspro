@@ -8,6 +8,9 @@ public class hitungPangkat07 {
         System.out.print("Pangkat: ");
         int pangkat = sc.nextInt();
         System.out.println(hitungPangkat(bilangan, pangkat));
+        System.out.println();
+        cetakDeretPangkat(bilangan, pangkat);
+        System.out.println(" = " + hitungPangkat(bilangan, pangkat));
     }
 
     static int hitungPangkat(int x, int y) {
@@ -16,6 +19,12 @@ public class hitungPangkat07 {
         } else {
             return (x * hitungPangkat(x, y - 1));
         }
+    }
+    static void cetakDeretPangkat(int x, int y) {
+        for (int i = 0; i <= y; i++) {
+            System.out.print(x + "x");
+        }
+        System.out.print("1");
     }
     
 }
